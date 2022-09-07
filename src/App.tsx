@@ -1,12 +1,12 @@
 import React from 'react';
+import { Route, Routes } from 'react-router-dom';
+import { Home } from './routes/defaultRoutes';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>Hello</p>
-      </header>
-    </div>
+    <Routes>
+      <Route path="/" element={<Home />} />
+    </Routes>
   );
 }
 
